@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
+
+body {
+  background-color: #696969;
+}
+ 
+.pageContainer {
+  width: 940px;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+ 
+.imageContainer {
+  float: left;
+  width: 620px;
+}
+ 
+.textContainer {
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+}
+ 
+h1 {
+  font-family: 'Times New Roman', cursive;
+  font-size: 64px;
+  color: #000000;
+}
+ 
+p, li {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  color: #000000;
+}
+
+.col_gap{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+/* ---- Advanced ---- */
+/* This tag is a bit advanced for this lesson,  
+   but is needed to wrap the pageContainer 
+   around any sized content that is floated within it. */
+
+.pageContainer:after { 
+  content: " ";
+  display: table;
+  clear: both;
+}

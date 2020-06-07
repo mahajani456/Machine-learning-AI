@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<title>AutoComplete Demo</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.0"></script>
+    	<script src="trie.js"></script>
+    	<script src="main.js"></script>
+
+
+
+<!-- WEB PAGE CONTENT HERE -->
+<h1>Demo</h1>
+
+<div id="row">
+	<div id="col">
+		<form>
+		      <fieldset>
+			<legend>Text input</legend>
+			<p>
+			  <label>Text box</label>
+			  <input type = "text"
+				 id = "myText"
+      				 autocomplete="off"
+				 placeholder = "text here" />
+			</p>
+			<p>
+			  <label>Text Area</label>
+			  <textarea id = "myTextArea"
+				  rows = "4"
+				  cols = "80"
+				  placeholder = "Your text here"></textarea>
+			</p>
+		      </fieldset>
+		</form>
+	</div>
+
+	<div class="col_gap">
+                      <!--horizontal space -->
+
+
+
+        </div>
+
+
+	<div id="col">
+		<form>
+		      <fieldset>
+			<legend>History</legend>
+			<p>
+			  <label>Text Area</label>
+			  <textarea id = "searchedWords"
+				  rows = "5"
+				  cols = "80"
+				  placeholder = "Enter past searched words"></textarea>
+			</p>
+			<p>
+			  <label>Text Area</label>
+			  <textarea id = "visitedLinks"
+				  rows = "5"
+				  cols = "80"
+				  placeholder = "Enter urls visited"></textarea>
+			</p>
+		      </fieldset>
+		</form>
+	</div>
+
+	
+	<button id = "updateButton"
+		class="button button1">Update</button>
+
+
+
+
+
+
+</body>
+</html>
